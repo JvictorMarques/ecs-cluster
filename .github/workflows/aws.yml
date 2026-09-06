@@ -48,8 +48,8 @@ jobs:
       id: build-image
       uses: docker/build-push-action@v7
       with:
+        context: app
         push: true
-        file: app/Dockerfile
         tags: ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY_NAME }}:${{ github.sha }}
 
     - name: Get task definition JSON file
