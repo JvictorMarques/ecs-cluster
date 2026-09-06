@@ -12,6 +12,7 @@ env:
   CONTAINER_NAME: portal
 
 permissions:
+  id-token: write
   contents: read
 
 jobs:
