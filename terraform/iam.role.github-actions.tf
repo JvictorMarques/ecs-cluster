@@ -20,7 +20,7 @@ resource "aws_iam_role" "github_actions_deploy" {
           }
           StringLike = {
             "token.actions.githubusercontent.com:sub" : [
-              "repo:JvictorMarques/ecs-cluster:*"
+              "repo:JvictorMarques@114443824/ecs-cluster@1359159062:*"
             ]
           }
         }
